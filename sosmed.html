@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ogi darma tena website</title>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style  type="text/css">
+		*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.png);
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 10px;
+}
+.navbar ul li:hover{
+	border-color: cyan;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+
+}
+.navbar ul li:after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #009688;
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	width: 550px;
+	height: 350px;
+	border: 3px solid white;
+	left: 30%;
+	top: 400px;
+	transition: 3s;
+}
+
+.content ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: white;
+	letter-spacing: 2px;
+
+}
+.content ul li a:hover{
+	color: lightblue;
+}
+.content ul li{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 30px;
+	list-style: none;
+}
+.content ul{
+	position: relative;
+	left: 50px;
+}
+.content h1{
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+.content ul li:hover > i{
+	transition: 1s;
+ transform: rotate3d(0, 0, 1, -360deg);
+
+	}
+@media(min-width: 320px) and (max-width: 768px){
+	.navbar ul li a{
+		font-size: 18px;
+	}
+
+	.navbar ul li{
+		text-align: center;
+		position: relative;
+		left: 150px;
+		padding: 3px;
+		display: block;
+		margin: 5px;
+
+	}
+	.content{
+		position: absolute;
+		left: 0;
+		border: none;
+	}
+	.content h1{
+		position: relative;
+		left: -110px;
+		top: -10px;
+		font-size: 35px;
+	}
+	.content ul{
+		transform: translateY(-10px);
+		left: 40px;
+		position: absolute;
+
+	}
+	.content ul li{
+		background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+		border-radius: 5px;
+		border: 2px solid white;
+		padding: 7px;
+		animation-name: isi;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+	}
+	@keyframes isi{
+		50%{
+			border-color: red;
+		}
+	}
+
+
+
+
+	.logo{
+		animation-name: ogi;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		position: fixed;
+		max-width: 100%;
+		max-height: 100%;
+		width: 90px;
+		border-radius: 30px;
+	}
+
+}
+
+
+	</style>
+
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<img src="ogi.png" class="logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sosmed.html">Media sosial</a></li>
+				<li><a href="pendidikan.html">Pendidikan</a></li>
+				<li><a href="about.html">about me</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			
+			<h1 style="transform-style: flat;transition-duration: 2.0s;">MEDIA SOSIAL</h1>
+			<ul>
+				<li>  <i class='bx bxl-facebook'></i> <a href="https://web.facebook.com/ogidarmatena.tena" target="_blank">FACEBOOK</a></li>
+				<li>  <i class='bx bxl-instagram' ></i> <a href="https://www.instagram.com/odt.unik/" target="_blank">INSTAGRAM</a></li>
+				<li>  <i class='bx bxl-tiktok'></i> <a href="https://vt.tiktok.com/ZSJvH5TgY/" target="_blank">TIK TOK</a></li>
+				<li>  <i class='bx bxl-twitter' ></i><a href="https://twitter.com/OgiTena" target="_blank"> TWETTER</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
